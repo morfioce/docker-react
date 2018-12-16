@@ -3,7 +3,7 @@ service:
   - docker
 
 before_install:
-  - docker build -f Docker.dev -t morfioce/docker-react .
+  - docker build -f Dockerfile.dev -t morfioce/docker-react .
 
 scriopt:
   - docker run morfioce/docker-react npm run test -- --coverage
